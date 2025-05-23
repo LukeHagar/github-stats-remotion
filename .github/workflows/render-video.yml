@@ -37,6 +37,11 @@ jobs:
         uses: borales/actions-yarn@v5
         with:
           cmd: render
+        env:
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
 
       - name: Auto commit
         uses: stefanzweifel/git-auto-commit-action@v5

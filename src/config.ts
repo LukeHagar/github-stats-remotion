@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import { redditUserSchema } from '../RedditTypes';
 
 export const FPS = 30;
 export const DurationInSeconds = 10;
@@ -76,6 +77,7 @@ export const userStatsSchema = z.object({
 
 export const mainSchema = z.object({
 	userStats: userStatsSchema,
+	redditStats: z.array(redditUserSchema).optional(),
 });
 
 export type MainProps = typeof mainSchema._output;
