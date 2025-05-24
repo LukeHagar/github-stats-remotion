@@ -29,6 +29,7 @@
 		"@types/snoowrap": "^1.19.0",
 		"axios": "^1.7.7",
 		"clsx": "^2.1.1",
+		"dotenv": "^16.5.0",
 		"framer-motion": "^11.9.0",
 		"lucide-react": "^0.446.0",
 		"octokit": "^4.0.2",
@@ -42,9 +43,13 @@
 	"devDependencies": {
 		"@remotion/eslint-config": "^4.0.214",
 		"@remotion/tailwind": "^4.0.214",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.3.0",
+		"@types/jest": "^29.5.14",
 		"@types/react": "^18.3.10",
 		"@types/web": "^0.0.167",
 		"eslint": "^9.11.1",
+		"jest": "^29.7.0",
 		"prettier": "^3.3.3",
 		"typescript": "^5.6.2"
 	},

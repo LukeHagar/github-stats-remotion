@@ -5,6 +5,9 @@
  * All configuration options: https://remotion.dev/docs/config
  */
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 import {Config} from '@remotion/cli/config';
 import {webpackOverride} from './src/webpack-override';
 

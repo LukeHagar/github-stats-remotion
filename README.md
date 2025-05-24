@@ -13,6 +13,22 @@ This project generates GIFs for each of the GitHub stats cards.
 ![Activity Overview](./out/activity-overview.gif)
 ![Commit Streak](./out/commit-streak.gif)
 
+## AI-Powered Insights
+
+This project now features AI-generated summaries of your GitHub statistics, providing a narrative overview of your activity and achievements.
+
+This functionality is powered by [OpenRouter](https://openrouter.ai/). To enable this feature, you will need to provide your own OpenRouter API key.
+
+### Setup Instructions:
+
+1.  If you don't already have one, create a file named `.env` in the root directory of this project.
+2.  Open the `.env` file and add the following line, replacing `your_actual_api_key` with your personal OpenRouter API key:
+    ```
+    OPENROUTER_API_KEY=your_actual_api_key
+    ```
+3.  You can refer to the `.env.example` file for the correct format.
+4.  Ensure that your `.env` file is listed in your `.gitignore` file to prevent your API key from being committed to a repository.
+
 ---
 
 ### Reddit Statistics
